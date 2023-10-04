@@ -1,0 +1,208 @@
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: IRANSans !important;
+  width: 100% !important;
+}
+
+@tailwind base;
+@layer base {
+  input[type="password"],
+  input[type="text"],
+  input[type="number"] {
+    height: 40px;
+    width: 100% !important;
+    padding: 0 16px;
+    border-radius: 3px;
+  }
+  input[type="number"].appearance-none::-webkit-inner-spin-button,
+  input[type="number"].appearance-none::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"].appearance-none {
+    -moz-appearance: textfield;
+  }
+  input[type="number"],
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Black.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Black.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Black.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Black.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/eot/IRANSansWeb(FaNum).eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+  }
+  input,
+  textarea {
+    @apply placeholder:text-sm;
+    @apply focus:outline-0;
+    @apply border border-gray-300;
+  }
+  h1 {
+    @apply text-xl;
+  }
+  h2 {
+    @apply text-lg;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  body,
+  label {
+    font-size: 16px;
+  }
+  p {
+    @apply leading-7 text-sm;
+  }
+  small {
+    font-size: 10px;
+  }
+  [type="text"]:focus {
+    @apply focus:ring-0 focus:ring-offset-0;
+  }
+}
+@tailwind components;
+@layer components {
+  .btn-primary {
+    @apply flex items-center gap-2 bg-gray-50 px-4 py-2 text-sm border border-gray-300 rounded-sm hover:bg-gray-200 transition-all;
+  }
+  .btn-secondary {
+    @apply bg-gray-200 px-4 py-2 text-sm border border-gray-300 hover:bg-gray-50  transition-all;
+  }
+  .btn-primary-outlined {
+    @apply text-xs md:text-sm rounded-sm border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white transition py-2 px-4 dark:bg-white;
+  }
+}
+@tailwind utilities;
+
+* {
+  @apply font-sans !important;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select,
+input[type="password"]:focus {
+  outline: 0;
+  border: 1px solid #dcdce5;
+}
+button:disabled,
+button[disabled] {
+  border: 0 !important;
+  background-color: #e0e0e0 !important;
+  color: #bdbdbd !important;
+  cursor: no-drop !important;
+}
+
+:fullscreen::backdrop {
+  background-color: white;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Style the scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+input[type="text"]:disabled,
+select:disabled {
+  background: #ededed;
+  cursor: not-allowed;
+}
+
+.ant-pagination {
+  background: #fafafa;
+  margin-top: 0 !important;
+  padding: 15px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .MuiBox-root {
+    display: block !important;
+  }
+  .ant-table-thead tr th {
+    padding: 12px !important;
+  }
+  .ant-table-tbody tr td {
+    font-size: 12px;
+  }
+}
+
+.ant-menu-item-selected {
+  background-color: #e6f4ff;
+}
+.ant-select-item-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+.ant-input {
+  height: auto;
+  width: 100% !important;
+  padding: 0 16px;
+  border-radius: 3px;
+  border: 0 !important;
+}
+.ant-form-item-explain-error {
+  font-size: 12px;
+  margin-top: 8px;
+}
+/* .ant-btn-primary,
+.ant-btn-primary:hover {
+  background: #676767 !important;
+} */
+.ant-pagination {
+  direction: ltr;
+}
